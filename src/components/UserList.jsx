@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const UserList = ({ users, setSelectedUser, filter }) => {
-  const [choosen, setChoosen] = useState(1);
+  const [choosen, setChoosen] = useState(0);
   const handleClick = (e) => {
     console.log(e);
     setSelectedUser(e);

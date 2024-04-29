@@ -20,8 +20,12 @@ const IconSideBar = ({ userMode, setUserMode }) => {
           <SettingIcon />
         </div>
       </div>
-      <div className=' ml-5 mb-10'>
-        <ToggleIcon userMode={userMode} setUserMode={setUserMode} />
+      <div className='flex flex-col justify-center items-center text-center mb-10'>
+        <span className=' font-serif mb-1'>Mode 1</span>
+        <div>
+          <ToggleIcon userMode={userMode} setUserMode={setUserMode} />
+        </div>
+        <span className=' font-serif mt-1'>Mode 2</span>
       </div>
     </div>
   );

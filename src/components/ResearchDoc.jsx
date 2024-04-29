@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const ResearchDoc = ({ docs, setSelectedTopic,filter }) => {
-  const [choosen, setChoosen] = useState(1);
+  const [choosen, setChoosen] = useState(0);
   const handleClick = (e) => {
     setSelectedTopic(e);
     setChoosen(e.id);
